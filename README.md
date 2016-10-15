@@ -12,7 +12,7 @@ As an administrator I want to see all members from a selected school.
 Installation Instructions
 --------------------------------------------------------------------------------
 Clone and cd into directory           
-$ git clone                
+$ git clone git@github.com:najibu/school-database.git           
 $ cd student-directory     
 
 Create the database and carry out migrations           
