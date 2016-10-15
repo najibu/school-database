@@ -16,8 +16,10 @@ $ git clone https://git@github.com:najibu/school-database.git
 $ cd school-database    
 
 Create the database and carry out migrations           
-$ bin/rake db:create           
-$ bin/rake db:migrate         
+$ bin/rails db:create           
+$ bin/rails db:migrate 
+$ bin/rails db:seed 
+
 
 Run the app          
 $ bin/rails s             

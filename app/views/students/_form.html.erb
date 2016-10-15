@@ -1,9 +1,17 @@
-<%= form_for @student do |f| %>
-	<%= f.label :name %>
-	<%= f.text_field :name %>
-	<%= f.label :email %>
-	<%= f.text_field :email %>
-	<%= f.label :school %>
-	<%= f.collection_select(:school_ids, School.all, :id, :name, {multiple: true}) %>
-	<%= f.submit %>
+<%= form_for @student, :html => {:class => "form-inline"} do |f| %>
+	<div class="form-group">
+		<%= f.label :name %>
+		<%= f.text_field :name, class: "form-control" %>
+	</div>
+	<div class="form-group">
+		<%= f.label :email %>
+		<%= f.text_field :email, class: "form-control" %>
+	</div>
+	<div class="form-group">
+		<%= f.label :school %>	
+		<div class="form-dropdown">		
+			<%= f.collection_select(:school_ids, School.all, :id, :name, {}, {multiple: true}) %>
+		</div>
+	</div>
+	<%= f.submit "Submit", class: "btn btn-default btn-primary" %>
 <% end %> 
