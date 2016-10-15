@@ -13,7 +13,7 @@ Installation Instructions
 --------------------------------------------------------------------------------
 Clone and cd into directory           
 $ git clone https://git@github.com:najibu/school-database.git           
-$ cd student-directory     
+$ cd school-database    
 
 Create the database and carry out migrations           
 $ bin/rake db:create           
